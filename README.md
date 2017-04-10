@@ -1,5 +1,5 @@
 This should be relatively straight forward to use if you have OpenCV already set up.
 
-I wrote a proof of concept blog post on this at: (http://spottedsun.com/face-detection-in-images-using-opencv-and-python/) [Link no longer works]
+I wrote a blog post about this, but that website is ded. Soz.
 
-Sadly.
+If OpenCV is set up - all you need to do is `pip install -r requirements.txt`
