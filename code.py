@@ -45,7 +45,7 @@ type="image/x-icon"></head><body>
 
     def POST(self):
         x = web.input(myfile={})
-        filedir = '/Users/mike/PycharmProjects/thing/uploads'
+        filedir = 'uploads/'
         if 'myfile' in x:
             filepath=x.myfile.filename.replace('\\','/')
 
@@ -58,7 +58,7 @@ type="image/x-icon"></head><body>
 
             image = cv2.imread(imagefile);
             unique_name = str(uuid.uuid4())
-            output_path = '/Users/mike/PycharmProjects/thing/static/%s.png' % unique_name
+            output_path = 'static/%s.png' % unique_name
             got_objects = detectObjects(image, imagefile)
             print got_objects[0]
             if (got_objects.any()):
